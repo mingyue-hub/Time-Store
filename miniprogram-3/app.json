@@ -1,0 +1,49 @@
+{
+  "pages": [
+    
+    "pages/Mytest/Mytest",
+    "pages/playground1/playground1",
+    "pages/chat/chat",
+    "pages/test/test",
+    "pages/userRegist/userRegist",
+    "pages/userLogin/userLogin",
+    "pages/playground2/playground2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "时间典当铺",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/playground1/playground1",
+        "iconPath": "pages/resouce/firstpage1.png",
+        "selectedIconPath": "pages/resouce/firstpage.png",
+        "text": "广场1"
+      },
+      {
+        "pagePath": "pages/playground2/playground2",
+        "iconPath": "pages/resouce/firstpage1.png",
+        "selectedIconPath": "pages/resouce/firstpage.png",
+        "text": "广场2"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "iconPath": "pages/resouce/note1.png",
+        "selectedIconPath": "pages/resouce/note.png",
+        "text": "信息"
+      },
+      {
+        "pagePath": "pages/Mytest/Mytest",
+        "iconPath": "pages/resouce/mine1.png",
+        "selectedIconPath": "pages/resouce/mine.png",
+        "text": "我"
+      }
+    ]
+  },
+  "debug": true
+}
