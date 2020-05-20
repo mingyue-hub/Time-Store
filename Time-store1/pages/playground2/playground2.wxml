@@ -1,0 +1,40 @@
+<!--pages/playground2/playground2.wxml-->
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">分类</view>  
+</view>  
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300"  style="height:{{winHeight}}px" bindchange="bindChange"> 
+  <swiper-item>  
+    <view wx:for-items="{{items}}" class='page_card'>
+      <view class='page-xx' >
+          <view class="numView"><text class="number">{{index+1}}</text></view>
+          <view class='page-xx-text' style='width:70%'>
+            <view class='xx-text-title'>
+              <text class ="text-title">{{item.title}}</text>
+            </view>
+            <view>
+              <text class ="text-context">{{item.context}}</text>
+            </view>
+          </view>
+          <image class="full-image"  src="{{item.image}}"></image>
+      </view>
+      <!-- <view class="jian">
+        <text class ="jian-text">{{item.context}}</text>
+      </view> -->
+ 
+      <view class="btn">
+       <view style='margin-left:70rpx;display:flex;flex-direction:row;'>
+       <image src='../resouce/tag.png' style="width:19px;height:19px;"> </image><text style="color:rgb(167, 166, 166)">{{item.tag}}</text> 
+        </view>
+          <view style='margin-left:110rpx;display:flex;flex-direction:row;'>
+         <image src='../resouce/fire.png' style="width:19px;height:19px;"> </image> <text style="color:rgb(167, 166, 166)">{{item.type}}热度</text>
+         </view>
+          <view style='margin-left:70rpx;display:flex;flex-direction:row;'>
+         <image src='../resouce/bit.png' style="width:19px;height:19px;"> </image> <text style="color:rgb(167, 166, 166)">{{item.bit}}</text>
+         </view>
+      </view>
+    </view>  
+  </swiper-item>  
+</swiper> 
