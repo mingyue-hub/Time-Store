@@ -1,0 +1,35 @@
+<view class="contain">
+ <button type="primary" size="mini" bindtap="regist">用户注册</button>
+ <button type="default" size="mini" bindtap="login">用户登录</button>
+</view>
+<view>
+  <view>
+
+      <view class="page-section">
+        <view class="page-section-title">input</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="uid" placeholder="学号" bindinput="uidinput"/>
+              <input class="weui-input" name="password" placeholder="密码" bindinput="passinput"/>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+       <view wx:for-items="{{user}}" class='page_card'>
+       <view class="numView"><text class="number">{{index+1}}</text></view>
+        <text class ="text-title">{{item.uid}}</text>
+       <text class ="text-title">{{item.nickname}}</text>
+       </view>
+        <button style="margin: 30rpx 0" type="primary" bindtap="getallusers">获取全部用户</button>
+        <button style="margin: 30rpx 0" formType="reset" bindtap="updateuser">修改用户信息</button>
+        <button class="mini-btn" style="margin: 30rpx 0" type="warn" bindtap="deleteuser">删除用户</button>
+        <button class="mini-btn" style="margin: 30rpx 0" type="primary" bindtap="getuserbyid">获取用户</button>
+        <button style="margin: 30rpx 0" formType="reset" bindtap="postinssue">发布招募信息</button>
+        <button style="margin: 30rpx 0" formType="reset" bindtap="aditinssue">修改招募信息</button>
+        <button class="mini-btn" style="margin: 30rpx 0" type="warn" bindtap="deleteinfo">删除信息</button>
+      </view>
+   </view>
+</view>

@@ -1,23 +1,19 @@
 <!--pages/mytest/Mytest.wxml-->
 <view>
 		<view class="top">
-		<view class="center">
-		
-		<view class="center_top" bindtap="tomine">
+			<view class="center">
+		<view class="center_top">
 					<view class="center_img" bingtap="toBaseInfo">
 						<!-- <image src="../../static/info_img.jpg"></image> -->
 						<open-data type="userAvatarUrl" class="user_head"></open-data>
 					</view>
-					
 					<view class="center_info" bingtap="toBaseInfo">
 						<view class="center_name">{{trueName}}</view>
 						<!-- <view class="center_phone">phone:{{phone}}</view> -->
-						<view class="center_phone">{{school}}</view>
+						<view class="center_phone">基本信息</view>
 					</view>
-					
 				</view>
-				
-				<!-- <view class="center_down">
+				<view class="center_down">
 					<view class="center_rank" bingtap="toNone">
 						<image class="rank_icon" src="../resouce/ranklist.png"></image>
 						<text class="rank_text">我的排名</text>
@@ -26,48 +22,45 @@
 						<image class="rank_icon" src="../resouce/money.png"></image>
 						<text class="rank_text">我的积分</text>
 					</view>
-				</view> -->
-		</view>
+				</view>
+			</view>
 			<image src='https://6661-fatdown-wxapp-sg2p1-1300398887.tcb.qcloud.la/wave.gif?sign=045605c672f482a8c3d428abed669aa7&t=1570674356' mode='scaleToFill' class='gif-wave'></image>
       <view class="mindlebox">
         <view class="box-test">
         <image class="boximg" src="../resouce/mystyle.png"></image>
 				<text class="boxtext">个人信誉</text>
-        <text class="boxtext">100</text>
         </view>
         <view class="box-test">
-        <image class="boximg" src="../resouce/money.png"></image>
-				<text class="boxtext">个人资产</text>
-        <text class="boxtext">0</text>
-        </view>
-                <view class="box-test">
         <image class="boximg" src="../resouce/allook.png"></image>
 				<text class="boxtext">任务总览</text>
         </view>
+        <view class="box-test">
+        <image class="boximg" src="../resouce/vs.png"></image>
+				<text class="boxtext">积分对比</text>
+        </view>
 		</view>
     <view class="boxlist">
-		
       <view class="listplay">
         <view class="center_score" bingtap="toNone">
 						<image class="list_icon" src="../resouce/work.png"></image>
 						<text class="list_text">我的任务</text>
 				</view>
+          
       </view>
- 
       <view class="listplay">
       <view class="center_score" bingtap="toNone">
 						<image class="list_icon" src="../resouce/hisrecord.png"></image>
 						<text class="list_text">历史记录</text>
-			</view>
+            
+					</view>
       </view>
-			
-      <view class="listplay" >
-      <view class="center_score" bindtap="tofeedback"> 
+      <view class="listplay">
+      <view class="center_score" bingtap="toNone">
 						<image class="list_icon" src="../resouce/restay.png"></image>
 						<text class="list_text">反馈意见</text>
-      </view>
-      </view>
-		
+            
+					</view>
+          </view>
     </view>
 	</view>
 </view>

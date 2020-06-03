@@ -1,12 +1,19 @@
 {
   "pages": [
-    
+    "pages/userLogin/userLogin",
     "pages/Mytest/Mytest",
+    "pages/Mypage/Mytest",
+    
+    "pages/Feedback/Feedback",
+    "pages/Myinfo/Myinfo",
+    
+    
+    "pages/forget/forget",
+    "pages/userRegist/userRegist",
     "pages/playground1/playground1",
     "pages/chat/chat",
     "pages/test/test",
-    "pages/userRegist/userRegist",
-    "pages/userLogin/userLogin",
+    "pages/minePage/mine",
     "pages/playground2/playground2"
   ],
   "window": {
@@ -21,27 +28,22 @@
     "list": [
       {
         "pagePath": "pages/playground1/playground1",
-        "iconPath": "pages/resouce/firstpage1.png",
-        "selectedIconPath": "pages/resouce/firstpage.png",
-        "text": "广场1"
+        "iconPath": "pages/resouce/play1.png",
+        "selectedIconPath": "pages/resouce/play1.png",
+        "text":"广场1"
       },
       {
         "pagePath": "pages/playground2/playground2",
-        "iconPath": "pages/resouce/firstpage1.png",
-        "selectedIconPath": "pages/resouce/firstpage.png",
-        "text": "广场2"
-      },
-      {
-        "pagePath": "pages/chat/chat",
-        "iconPath": "pages/resouce/note1.png",
-        "selectedIconPath": "pages/resouce/note.png",
-        "text": "信息"
+        "iconPath": "pages/resouce/play2.png",
+        "selectedIconPath": "pages/resouce/play2.png",
+        "text":"广场2"
       },
       {
         "pagePath": "pages/Mytest/Mytest",
-        "iconPath": "pages/resouce/mine1.png",
-        "selectedIconPath": "pages/resouce/mine.png",
-        "text": "我"
+        "iconPath": "pages/resouce/mypage.png",
+        "selectedIconPath": "pages/resouce/mypage.png",
+        "text": "我的"
+       
       }
     ]
   },

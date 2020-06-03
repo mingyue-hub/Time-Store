@@ -5,7 +5,7 @@ Page {
 
 .top {
   width: 100%;
-  height: 140px;
+  height: 180px;
   background: rgb(19, 17, 17);
   padding-top: 15px;
   position: relative;
@@ -13,7 +13,7 @@ Page {
 
 .center {
   width: 95%;
-  height: 100px;
+  height: 150px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -111,15 +111,14 @@ Page {
   left: 0;
   z-index: 99;
   mix-blend-mode: screen;
-  height: 80rpx;
+  height: 100rpx;
 }
 .mindlebox{
-  margin-top: 130rpx;
+  margin-top: 100rpx;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 200rpx;
-
 }
 .box-test{
   width: 180rpx;
@@ -156,7 +155,7 @@ Page {
 }
 .listplay{
   height: 130rpx;
-  border: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 .list_icon{
   margin-top: 30rpx;

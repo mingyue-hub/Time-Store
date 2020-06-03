@@ -1,0 +1,41 @@
+<view>
+  <view class="login-form">
+    <form bindsubmit="doUpdate">
+     
+      <view class="inputView">
+        
+        <input name="email" class="inputText" bindchange="inputemail"  placeholder="邮箱（必填，找回密码用）"/>
+         
+      </view>
+      <view class="line"></view>
+   
+      <view class="inputView">
+        <input bindinput="inputTel" maxlength="6"  placeholder="请输入验证码" class="inputText"></input>
+        <button bindtap="sendCode" disabled="{{smsFlag}}" style='margin-top:20px;margin-right:10rpx;color:{{sendColor}};font-size:28rpx'>{{sendTime}}</button>
+      </view>
+
+      <view class="line"></view>
+      <view class="inputView">
+        
+        <input name="password" class="inputText" password="true" placeholder="新密码" bindblur="passinput"/>
+      </view>
+     <view class="line"></view>
+      <view class="inputView">
+        <input class="inputText" password="true" placeholder="确认密码" bindblur="jpassword"/>
+      </view>
+  <view class="line"></view>
+      
+     
+      <view>
+        <button style="width:70vw " class="loginBtn"  form-type='submit'>确认</button>
+      </view>
+      <view>
+        <button style="width:70vw " class="goLoginBtn"  bindtap="goLoginBtn">返回</button>
+      </view>
+    </form>
+  </view>
+  <!--按钮-->
+  
+
+
+</view>

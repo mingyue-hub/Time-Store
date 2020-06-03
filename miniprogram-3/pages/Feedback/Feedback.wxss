@@ -1,0 +1,55 @@
+/* pages/Feedback/Feedback.wxss */
+
+.container{
+  height: 100vh;
+  /* display: flex; */
+  background-color: rgb(244, 243, 242);
+  /* flex-direction: column;
+  justify-content: space-between; */
+  /* align-items: ; */
+}
+
+
+
+.item{
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.btn{
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 15rpx;
+  right: 20rpx;
+}
+
+.big{
+  background-color: white;
+  width: 100%;
+  height: 635rpx;
+  position: absolute;
+  top: 30rpx;
+}
+
+.detailText{
+  /* border: 2px solid black; */
+  /* width: 80%; */
+  background-color: white;
+  width: 100%;
+  height: 500rpx;
+  position: absolute;
+  top: 30rpx;
+}
+
+.detailimage{
+  background-color: white;
+  width: 100%;
+  height: 300rpx;
+}
+
+.imginfo{
+  height: 150rpx;
+  width: 140rpx;
+  border: 5rpx solid rgb(194, 187, 187);
+}

@@ -1,27 +1,39 @@
 /* pages/useruserLogin/userLogin.wxss */
 
 page {
-  background-color: whitesmoke;
+  background-color: white;
+  
 }
 .login-icon {
     margin: 0 auto;
-    width: 375rpx;
-    height: 375rpx;
+    width: 80%;
+    height: 500rpx;
 }
 
 .login-img {
-  width: 375rpx;
-  height: 300rpx;
+  margin: 0 auto;
+  width: 100%;
+  height: 500rpx;
 
 }
 /*表单内容*/
-.inputView {
-  width: 90%;
+.inputView1 {
+  width: 80%;
   background-color: white;
   line-height: 45px;
   margin: 0 auto;
+  margin-bottom: 50rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.356);
+  border-radius:15rpx; 
 }
-
+.inputView2 {
+  width: 80%;
+  background-color: white;
+  line-height: 45px;
+  margin: 0 auto;
+  border: 2rpx solid rgba(0, 0, 0, 0.356);
+  border-radius:15rpx; 
+}
 /*输入框*/
 .nameImage,.keyImage {
   margin-left: 22rpx;
@@ -42,20 +54,23 @@ page {
   margin-top:11px;
   font-size: 15px;
 }
-.line {
-  width: 90%;
-  height: 1px;
-  background-color: gainsboro;
-  margin-top: 1px;
-}
 
 /*按钮*/
 .loginBtn {
-  width: 80%;
-  margin-top: 35px;
+  margin-top: 25px;
+  background-color:red;
+  color: white;
+  border-radius:15rpx; 
 }
 .goRegistBtn {
-  width: 80%;
   margin-top: 15px;
-  background-color: white;
+  background-color: rgb(97, 201, 241);
+  color: white;
+  border-radius:15rpx; 
+}
+.displayright{
+  float: right;
+  margin-top: 5rpx;
+  margin-right: 50rpx;
+  margin-bottom: 25rpx;
 }

@@ -6,9 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    trueName:"xxxxx",
-    school:"xxxxx大学",
-    user:null
+
   },
 
   /**
@@ -18,7 +16,7 @@ Page({
     wx.setNavigationBarTitle({
       title: '个人中心',
     })
-    if (app.globalData.token == null) {
+    if (app.globalData.token==null){
       wx.showToast({
         title: '尚未登录',
         icon: 'none',
@@ -77,15 +75,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  tofeedback:function(){
-    wx.navigateTo({
-      url: '../Feedback/Feedback',
-    })
-  },
-  tomine:function(){
-    wx.navigateTo({
-      url: '../Myinfo/Myinfo',
-    })
   }
 })
