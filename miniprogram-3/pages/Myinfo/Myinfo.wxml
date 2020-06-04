@@ -1,0 +1,60 @@
+<!--pages/Myinfo/Myinfo.wxml-->
+<view class="container">
+  <view class="item1">
+    <view class="big1" bindtap="changeFace">
+      <text class="style">头像</text>
+      <image class="img" src="{{user.faceimg}}"></image>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">昵称</text>
+      <text class="style1">{{user.nickname}}</text>
+    </view>
+  </view>
+  
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">用户名</text>
+      <text class="style1">{{user.uid}}</text>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">性别</text>
+      <text class="style1">{{user.sex}}</text>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">学校</text>
+      <text class="style1">{{user.school}}</text>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">邮箱</text>
+      <text class="style1">{{user.email}}</text>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">电话</text>
+      <text class="style1">{{phone}}</text>
+    </view>
+  </view>
+  
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">财产</text>
+      <text class="style1">{{user.property}}</text>
+    </view>
+  </view>
+  <view class="item2">
+    <view class="big2">
+      <text class="style2">信用积分</text>
+      <text class="style1">{{user.credit}}</text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,41 @@
+
+<view>
+  <view class="container">
+    <image src="{{avatarUrl}}" class = "face" bindtap="changeFace"></image>
+    <label class="userinfo-nickname">{{userInfo.nickName}}</label>
+    <block wx:if="{{!isMe}}">
+      <block wx:if="{{!ifFollow}}">
+        <button size="mini" type="primary" class="follow" data-followType="1" bindtap="followMe">关注</button>
+      </block>
+      <block wx:else>
+        <button size="mini" class="follow" data-followType="" bindtap="followMe">已关注</button>
+      </block>
+    </block>
+    <block wx:if="{{isMe}}">
+      <view class="buttonstyle">
+      <button type="primary" size="mini" bindtap="uploadfile">上传作品</button>
+      <button size="mini" bindtap="logout" class="logout">注销</button>
+      </view>
+    </block>
+    <view class="container-row">
+      <label class="info-items">{{userInfo.fanscounts}}粉丝</label>
+      <label class="info-items">{{userInfo.followcounts}}关注</label>
+      <label class="info-items">{{userInfo.receivelikecounts}}获赞</label>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="container-video">
+    <!--发布的作品-->
+    <view class="{{videoSelClass}} {{isSelectedWork}}" bindtap="doSelectWork">作品</view>
+    <!--收藏作品-->
+    <view class="{{videoSelClass}} {{isSelectedLike}}">收藏</view>
+    <view class="container-video-list">
+      <view hidden="{{myWorkFalg}}">
+        <block wx:for="{{myVideoList}}">
+          <image src="{{serverUrl}}{{item.coverPath}}" class="video" bindtap="showVideo" data-arrindex="{{index}}"></image>
+        </block>
+      </view>
+    
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/Feedback/Feedback.wxml-->
+<view class="container">
+  <view class="big">
+    <textarea class="detailText" placeholder="说说您的问题..." value="{{information}}"
+    bindinput="getDataBindTap">
+    </textarea>
+    <view class="item">字数:{{num}}/140</view>
+    <button class="btn" bindtap="click" type="primary" style="width:23vw" >
+      提交
+    </button>
+  </view>
+  <!-- <button class="btn" bindtap="click" type="primary" style="width:23vw" >
+      提交
+  </button> -->
+  <!-- <button bindtap="click">test</button> -->
+</view>
