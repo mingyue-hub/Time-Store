@@ -8,7 +8,7 @@
   <swiper-item>  
         
         <scroll-view class='main-scroll' scroll-y style="height: 100%">
-            <view class="list1"  wx:for-items="{{items}}">
+            <view class="list1" bindtap="toinformation"  wx:for-items="{{items}}">
             <view class="left1">
               <view class="itemtitle">{{item.title}}</view>
               <view class="time">{{item.time}}</view>

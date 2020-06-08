@@ -1,0 +1,39 @@
+<!--pages/playground1/playground1-1/playground1-1.wxml-->
+<view>
+  <image class="top_image" src="../../resouce/timetrading1.png" mode="aspectFill"></image>
+  <view class="detail">
+      <view class="title">
+        <text class="title-text">{{information.title}}</text>
+      </view>
+      <view class="list-1">
+        <text class="font-list">类别：{{information.tag}}</text>
+      </view>
+      <view class="list">
+        <text class="font-list">性别:{{information.sex}}</text>
+      </view>
+      <view class="list">
+        <text class="font-list">时间：{{information.time}}</text>
+      </view>
+      <view class="context">
+        <text class="font-context">具体内容：{{information.context}}</text>
+      </view>
+      <view class="sendtime">
+        <text class="font-sendtime">发布时间:{{information.sendtime}}</text>
+      </view>
+  </view>
+  <view class="line"></view>
+  <view class="person">
+        <view class="left" bindtap="toopp_person">
+          <image class="left-image" src="{{senderinfo.image}}"></image>
+          <view class="left-info" >
+            <view class="font-info">昵称：{{senderinfo.name}}</view>
+            <view class="font-info">性别：{{senderinfo.sex}}</view>
+          </view>
+        </view>
+        <view class="right">
+          <view class="bottom" bindtap="accept">接单</view>
+          <view class="bottom" bindtap="tochat">私聊</view>
+          <view class="bottom" bindtap="undo">撤销</view>
+        </view>
+  </view>
+</view>

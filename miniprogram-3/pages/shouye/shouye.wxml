@@ -2,7 +2,7 @@
 <view class="contain">
    <view class="box1">
     <view class="title"><view class="titletext">时间换金钱</view></view>
-    <view class="list1"  wx:for-items="{{items}}">
+    <view class="list1" bindtap="toinformation" wx:for-items="{{items}}">
       <view class="left1">
         <view class="itemtitle">{{item.title}}</view>
         <view class="time">{{item.time}}</view>

@@ -10,7 +10,7 @@
   
         <scroll-view class='main-scroll' scroll-y style="height: 100%">
             <view class='main-list'>
-            <view class='card' wx:for="{{items}}">
+            <view class='card' bindtap="toinformation" wx:for="{{items}}">
               <view class='card-box'><image class="img1" src="{{item.image}}"></image></view>
               <view class="itemtitle">{{item.title}}</view>
               <view class='time'>{{item.time}}</view>

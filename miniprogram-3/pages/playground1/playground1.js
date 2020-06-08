@@ -104,6 +104,12 @@ Page({
 
     ]
   },
+
+  toinformation:function(){
+    wx.navigateTo({
+      url: '../playground1/playground1-1/playground1-1',
+    })
+  },
   onLoad: function () {
     var that = this;
 

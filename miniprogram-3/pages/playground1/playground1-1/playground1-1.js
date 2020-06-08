@@ -1,34 +1,45 @@
-// pages/shouye/shouye.js
+// pages/playground1/playground1-1/playground1-1.js
 Page({
 
+  /**
+   * 页面的初始数据
+   */
   data: {
-    items: [{
-      'image': "https://img.51miz.com/Element/00/71/25/04/6c448236_E712504_a41b4297.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fh/63",
+    senderinfo:{
+      image:'../../resouce/timestore3.jpg',
+      name:'雨先生',
+      sex:'男'
+    },
+    information:{
       'title': '一起来散步聊聊天',
       'context': '最近疫情宅在家心情不大好，想找个同专业的同学聊聊天',
       'tag': "找伙伴",
-      'type': "80%",
-      "time":"2020-10-20",
-
+      'sex':'男',
+      'time':'6月6日',
+      'sendtime':'2020年6月1日'
     },
-    {
-      'image': "https://img.51miz.com/Element/00/71/25/04/6c448236_E712504_a41b4297.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fh/630",
-      'title': '一起锻炼嘛？',
-      'context': '想找一个一起锻炼的小姐姐（本人女）跑步瑜伽都可',
-      'tag': "锻炼",
-      'type': "50%",
-      "time": "2020-10-20",
-    }
-    
-
-    ]
   },
-
-  toinformation:function(){
+  tochat:function(){
     wx.navigateTo({
-      url: '../playground1/playground1-1/playground1-1',
+      url: '../../playground1/plg-chat/plg-chat',
     })
   },
+  toopp_person:function(){
+    wx.navigateTo({
+      url: '../../opp-person/opp-person',
+    })
+  },
+  accept:function(){
+    wx.showToast({
+      title: '接单成功',
+    })
+  },
+  undo:function(){
+    wx.showToast({
+      title: '撤单成功',
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -83,15 +94,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toplay1:function(){
-    wx.navigateTo({
-      url: '../playground1/playground1',
-    })
-  },
-  toplay2: function () {
-    wx.navigateTo({
-      url: '../playground2/playground2',
-    })
   }
 })
