@@ -1,0 +1,65 @@
+/* pages/Myinfo/Myinfo.wxss */
+.container{
+  height: 100vh;
+  background-color: rgb(244, 243, 242);
+}
+
+.img{
+  float: right;
+  height: 100rpx;
+  width: 100rpx;
+  position: relative;
+  margin-top: 15rpx;
+  margin-right: 20rpx;
+}
+.item1{
+  background-color: white;
+  height: 130rpx;
+  width: 100vw;
+  border-bottom: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
+}
+.item2{
+  background-color: white;
+  height: 100rpx;
+  width: 100vw;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.style{
+  font-size: 35rpx;
+  color: rgb(97, 95, 95);
+  position: relative;
+  left: 20rpx;
+  top: 35rpx;
+}
+
+.style1{
+  float: right;
+  font-size: 30rpx;
+  color: #AAAAAA;
+  
+  margin-top: 32rpx;
+  margin-right: 20rpx;
+}
+.style2{
+  font-size: 35rpx;
+  color: rgb(97, 95, 95);
+  position: relative;
+  left: 20rpx;
+  top: 30rpx;
+}
+
+.big1{
+  height: 65px;
+  width: 100vw;
+}
+
+.big2{
+  height: 50px;
+  width: 100vw;
+  
+  /* background-color: aqua; */
+  /* display: flex;
+  flex-direction: row; */
+}

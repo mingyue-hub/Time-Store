@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/playground1/playground1",
+    "pages/playground1/plg-chat/plg-chat",
+    "pages/userLogin/userLogin",
+    "pages/Mytest/Mytest",
+    "pages/Mypage/Mytest",
+    "pages/playground1/playground1-1/playground1-1",
+    "pages/playground2/playground2-1/playground2-1",
+    "pages/Feedback/Feedback",
+    "pages/Myinfo/Myinfo",
+    
+    
+    "pages/forget/forget",
+    "pages/userRegist/userRegist",
+    
+    "pages/chat/chat",
+    "pages/test/test",
+    "pages/minePage/mine",
+    "pages/playground2/playground2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "时间典当铺",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/playground1/playground1",
+        "iconPath": "pages/resouce/play1.png",
+        "selectedIconPath": "pages/resouce/play1.png",
+        "text":"广场1"
+      },
+      {
+        "pagePath": "pages/playground2/playground2",
+        "iconPath": "pages/resouce/play2.png",
+        "selectedIconPath": "pages/resouce/play2.png",
+        "text":"广场2"
+      },
+      {
+        "pagePath": "pages/Mytest/Mytest",
+        "iconPath": "pages/resouce/mypage.png",
+        "selectedIconPath": "pages/resouce/mypage.png",
+        "text": "我的"
+       
+      }
+    ]
+  },
+  "debug": true
+}

@@ -1,0 +1,61 @@
+/* pages/useruserLogin/userLogin.wxss */
+
+page {
+  background-color: whitesmoke;
+}
+.login-icon {
+    margin: 0 auto;
+    width: 375rpx;
+    height: 375rpx;
+}
+
+.login-img {
+  width: 375rpx;
+  height: 300rpx;
+
+}
+/*表单内容*/
+.inputView {
+  width: 90%;
+  background-color: white;
+  line-height: 45px;
+  margin: 0 auto;
+}
+
+/*输入框*/
+.nameImage,.keyImage {
+  margin-left: 22rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.loginLable {
+  margin: 15px 15px 15px 10px;
+  color: gray;
+  font-size: 15px;
+}
+
+.inputText {
+  float:right;
+  text-align:left;
+  margin-right: 30px;
+  margin-top:11px;
+  font-size: 15px;
+}
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: gainsboro;
+  margin-top: 1px;
+}
+
+/*按钮*/
+.loginBtn {
+  width: 80%;
+  margin-top: 35px;
+}
+.goRegistBtn {
+  width: 80%;
+  margin-top: 15px;
+  background-color: white;
+}
