@@ -1,41 +1,87 @@
-/* pages/mytest/Mytest.wxss */
-Page {
-  font-size: 14px;
+page{
+  background-color: rgb(245, 242, 242);
 }
-
-.top {
-  width: 100%;
-  height: 180px;
-  background: rgb(19, 17, 17);
-  padding-top: 15px;
-  position: relative;
+.top{
+  width: 120%;
+  height: 300rpx;
 }
-
-.center {
-  width: 95%;
-  height: 150px;
-  background: white;
+.top_back {
+  display: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 300rpx;
+}
+.top_back::after{
+  content: '';
+  width: 120%;
+  height: 300rpx;
+  position: absolute;
+  z-index: -1;
+  left: -10%;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient(160deg,rgb(240, 122, 12), rgb(240, 122, 12));
+}
+.top_center{
+  width: 75%;
+  background-color: white;
+  height: 280rpx;
+  margin-top: 120rpx;
+  margin-left: 38rpx;
+  border-radius: 20rpx;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  border-radius: 5px;
 }
-
-.center_top {
+.center_up{
   display: flex;
   flex-direction: row;
-  width: 80%;
-  height: 80px;
+  width: 100%;
+  height: 50%;
   margin: 0 auto;
   margin-top: 20rpx;
-  border-bottom: 1px solid #EEEEEE;
+  
 }
-
+.center_down{
+width: 100%;
+height: 50%;
+display: flex;
+flex-direction: row;
+}
+.center_down_list{
+  width: 21%;
+  height: 100%;
+  display:flex;
+  margin-top: 20rpx;
+  flex-direction: column;
+}
+.line{
+  margin-top: 30rpx;
+  width: 4%;
+  height: 40rpx;
+  border-right: solid 1px #ccc;
+  vertical-align: middle;
+  display: inline-block ;
+}
+.text_up{
+  font-family: SimHei;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.text_down{
+  margin-top: 10rpx;
+  font-family: SimHei;
+  font-size: 21rpx;
+  margin-left: 47rpx;
+  text-align: center;
+}
 .center_img {
-  width: 66px;
-  height: 66px;
+  width: 120rpx;
+  height: 120rpx;
   border-radius: 50%;
   overflow: hidden;
+  margin-left: 40rpx;
 }
 
 .center_img image {
@@ -48,133 +94,138 @@ Page {
   width: 100%;
   height: 100%;
 }
-
 .center_info {
   display: flex;
   flex-direction: column;
   margin-top: 10rpx;
-  margin-left: 30px;
+  margin-left: 50rpx;
 }
 
 .center_name {
-  font-size: 20px;
+  font-size: 40rpx;
 }
 
-.center_phone {
+.center_school {
+  font-size: 25rpx;
+  margin-top: 20rpx;
   color: #BEBEBE;
 }
-
-.center_down {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 35px;
-  margin: 0 auto;
-  margin-top: 20rpx;
-}
-
-.center_rank {
-  width: 50%;
-  height: 35px;
-  display: flex;
-  flex-direction: row;
-}
-
-.rank_text {
-  height: 35px;
-  line-height: 35px;
-  margin-left: 10rpx;
-  color: #AAAAAA;
-}
-
-.center_rank image {
-  width: 35px;
-  height: 35px;
-}
-
-.center_score {
-  width: 50%;
-  height: 35px;
-  display: flex;
-  flex-direction: row;
-}
-
-.center_score image {
-  width: 35px;
-  height: 35px;
-}
-
-.gif-wave {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  mix-blend-mode: screen;
-  height: 100rpx;
-}
-.mindlebox{
-  margin-top: 100rpx;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 200rpx;
-}
-.box-test{
-  width: 180rpx;
-  height: 180rpx;
-  border-radius: 15rpx;
-  margin-left: 50rpx;
- box-shadow: 2rpx 4rpx 6rpx 8rpx #EEEEEE;
-  display: flex;
-  flex-direction: column;
-}
-.boximg{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-top: 30rpx;
-}
-.boxtext{
-
-  margin: 0 auto;
-  margin-top: 10rpx;
-  color: #AAAAAA;
-}
-.boxlist{
-  width: 90%;
-  height: 390rpx;
-  border-radius: 15rpx;
-  box-shadow: 2rpx 4rpx 6rpx 8rpx #EEEEEE;
+.center-right{
+  font-size: 30rpx;
+  margin-left: 120rpx;
   margin-top: 50rpx;
-  margin-left: 40rpx;
+  float: right;
+  color: rgb(163, 162, 162);
+}
+.context{
+  width: 90%;
+  background-color: white;
+  height: 360rpx;
+  margin-top: 30rpx;
+  margin-left: 38rpx;
+  border-radius: 20rpx;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
-.listplay{
-  height: 130rpx;
-  border-bottom: 1px solid #EEEEEE;
+.context_up{
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 45%;
 }
-.list_icon{
-  margin-top: 30rpx;
-  margin-left: 20rpx;
-  border-radius: 50%;
+.context_list{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
-.list_text{
-  margin-top: 30rpx;
-  height: 35px;
+.imgview{
+  width: 66rpx;
+  height: 66rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.imgtext{
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  font-family: SimHei;
+}
+
+.box1{
+  margin-top: 50rpx;
+  width: 90%;
+  height: 50vh;
+  margin-left: 38rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dbdbdb; 
+}
+
+.title{
+  height: 15%;
+  border-bottom: 1px solid #dbdbdb; 
+}
+.titletext{
+  text-align: center;
+  margin: 0 auto;
   font-size: 35rpx;
-  line-height: 35px;
-  margin-left: 20rpx;
-  color: #AAAAAA;
+  font-weight: bold;
+  font-family:  Microsoft Yahei ;
+  margin-top: 15rpx;
 }
-.list_text1{
+.list1{
+  width: 100%;
+  height: 38%;
+  border-bottom: 1px solid #dbdbdb; 
+  display: flex;
+  flex-direction: row;
+}
+.left1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.right{
+  width: 40%;
+  margin-left: 50rpx;
+}
+.itemtitle{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.time{
   margin-top: 30rpx;
-  margin-left: 240rpx;
-  color: #AAAAAA;
-  font-size: 35rpx;
-  height: 35px;
-  line-height: 35px;
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(179, 176, 176);
 }
+.img1{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width:160rpx;
+  height:120rpx;
+  
+}
+.more{
+  height: 15%;
+ 
+  text-align: center;
+}
+.moretext{
+  text-align: center;
+  margin: 0 auto; 
+  font-family:  Microsoft Yahei ;
+  margin-top: 18rpx;
+  color: rgb(150, 148, 148);
+}
+
+

@@ -1,0 +1,36 @@
+<view class="container" style="height:{{editorHeight}}rpx;">
+<input name="title" class="titleinput" placeholder="标题（建议15字以内）" bindinput="titlechange"></input>
+  <editor  id="editor" class="ql-container" placeholder="{{placeholder}}" bindstatuschange="onStatusChange" bindready="onEditorReady" bindinput="onContentChange">
+  </editor>
+  <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx"  >
+        <view class="picker" >
+         <text class="article">分类（必选）:</text>  
+         <text class="pickinput">{{pic_array[hx_index].name}}</text>
+        </view>
+  </picker>
+  <view class="bin" wx:if="{{m_to_m==1}}">
+    <text class="money">赏金 (必选) ：</text>  
+    <input name="money" class="moneyinput" bindinput="moneychange" placeholder="单位/元" type="number"></input>
+  </view>
+  <view class="button">
+        <button style="width:80vw " class="loginBtn" bindtap="loginBtn">发布</button>
+        <button style="width:80vw" class="goRegistBtn" bindtap="backBtn">返回</button>
+  </view>
+</view>
+
+<view class="toolbar" catchtouchend="format" hidden="{{keyboardHeight > 0 ? false : true}}" style="bottom: {{isIOS ? keyboardHeight : 0}}px">
+  <i class="iconfont icon-charutupian" catchtouchend="insertImage"></i>
+  <i class="iconfont icon-format-header-2 {{formats.header === 2 ? 'ql-active' : ''}}" data-name="header" data-value="{{2}}"></i>
+  <i class="iconfont icon-format-header-3 {{formats.header === 3 ? 'ql-active' : ''}}" data-name="header" data-value="{{3}}"></i>
+  <i class="iconfont icon-zitijiacu {{formats.bold ? 'ql-active' : ''}}" data-name="bold"></i>
+  <i class="iconfont icon-zitixieti {{formats.italic ? 'ql-active' : ''}}" data-name="italic"></i>
+  <i class="iconfont icon-zitixiahuaxian {{formats.underline ? 'ql-active' : ''}}" data-name="underline"></i>
+  <i class="iconfont icon--checklist" data-name="list" data-value="check"></i>
+  <i class="iconfont icon-youxupailie {{formats.list === 'ordered' ? 'ql-active' : ''}}" data-name="list" data-value="ordered"></i>
+  <i class="iconfont icon-wuxupailie {{formats.list === 'bullet' ? 'ql-active' : ''}}" data-name="list" data-value="bullet"></i>
+</view>
+
+<!-- 显示富文本内容 -->
+<!-- <view class="show-rich">
+      <rich-text nodes="{{nodes}}"></rich-text>
+    </view> -->

@@ -18,16 +18,16 @@ Page({
     wx.setNavigationBarTitle({
       title: '个人中心',
     })
-    if (app.globalData.token == null) {
-      wx.showToast({
-        title: '尚未登录',
-        icon: 'none',
-        duration: 8000
-      })
-      wx.navigateTo({
-        url: '../userLogin/userLogin',
-      })
-    }
+    // if (app.globalData.token == null) {
+    //   wx.showToast({
+    //     title: '尚未登录',
+    //     icon: 'none',
+    //     duration: 8000
+    //   })
+    //   wx.navigateTo({
+    //     url: '../userLogin/userLogin',
+    //   })
+    // }
   },
 
   /**

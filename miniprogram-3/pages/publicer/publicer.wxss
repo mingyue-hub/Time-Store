@@ -1,0 +1,21 @@
+.loginBtn {
+  margin-top: 300rpx;
+  background-color:rgb(253, 128, 11);
+  color: white;
+  border-radius: 50rpx;
+}
+.loginBtn1 {
+  margin-top: 50rpx;
+  background-color:rgb(253, 128, 11);
+  color: white;
+  border-radius: 50rpx;
+}
+.context{
+  font-size: 50rpx;
+  font-family: SimHei;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+}
