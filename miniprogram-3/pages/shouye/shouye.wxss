@@ -1,0 +1,112 @@
+.contain{
+  background-color: rgba(128, 128, 128, 0.144);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box1{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dbdbdb; 
+}
+.box2{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 45vh;
+  background-color: white;
+}
+.title{
+  height: 15%;
+  border-bottom: 1px solid #dbdbdb; 
+}
+.titletext{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 35rpx;
+  font-weight: bold;
+  font-family:  Microsoft Yahei ;
+  margin-top: 15rpx;
+}
+.list1{
+  width: 100%;
+  height: 35%;
+  border-bottom: 1px solid #dbdbdb; 
+  display: flex;
+  flex-direction: row;
+}
+.left1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.right{
+  width: 40%;
+  margin-left: 50rpx;
+}
+.itemtitle{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.time{
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(179, 176, 176);
+}
+.img1{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width:80px;
+  height:60px;
+  
+}
+.more{
+  height: 15%;
+ 
+  text-align: center;
+}
+.moretext{
+  text-align: center;
+  margin: 0 auto; 
+  font-family:  Microsoft Yahei ;
+  margin-top: 18rpx;
+  color: rgb(150, 148, 148);
+}
+.list2{
+  height: 65%;
+ 
+}
+.item2{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.img2{
+  margin: 0 auto;
+  width:100%;
+  height:300rpx;
+  border-radius: 15rpx;
+}
+.discripe{
+  position: absolute;
+  font-weight: bold;
+  font-family:  SimHei;
+  margin-top: 240rpx;
+  color: white;
+}
+.title2{
+  height: 15%;
+  
+}
+.more1{
+  height: 15%;
+
+  text-align: center;
+}

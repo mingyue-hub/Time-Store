@@ -17,7 +17,7 @@
         <input name="password" class="inputText" password="true" placeholder="请输入密码"/>
       </view>
       <view class="displayright">
-      <text bindtap="toforget">忘记密码？</text>
+      <text bindtap="toforget" style="color:rgb(247, 153, 30)">忘记密码？</text>
       </view>
       <view>
         <button style="width:80vw " class="loginBtn" form-type='submit'>登录</button>

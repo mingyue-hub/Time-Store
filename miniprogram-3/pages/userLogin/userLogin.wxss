@@ -50,7 +50,7 @@ page {
 .inputText {
   float:right;
   text-align:left;
-  margin-right: 30px;
+  
   margin-top:11px;
   font-size: 15px;
 }
@@ -58,7 +58,7 @@ page {
 /*按钮*/
 .loginBtn {
   margin-top: 25px;
-  background-color:red;
+  background-color:rgb(253, 128, 11);
   color: white;
   border-radius:15rpx; 
 }

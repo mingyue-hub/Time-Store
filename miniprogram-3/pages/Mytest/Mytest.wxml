@@ -28,7 +28,7 @@
 					</view>
 				</view> -->
 		</view>
-			<image src='https://6661-fatdown-wxapp-sg2p1-1300398887.tcb.qcloud.la/wave.gif?sign=045605c672f482a8c3d428abed669aa7&t=1570674356' mode='scaleToFill' class='gif-wave'></image>
+			<!-- <image src='https://6661-fatdown-wxapp-sg2p1-1300398887.tcb.qcloud.la/wave.gif?sign=045605c672f482a8c3d428abed669aa7&t=1570674356' mode='scaleToFill' class='gif-wave'></image> -->
       <view class="mindlebox">
         <view class="box-test">
         <image class="boximg" src="../resouce/mystyle.png"></image>
@@ -67,6 +67,7 @@
 						<text class="list_text">反馈意见</text>
       </view>
       </view>
+      
 		
     </view>
 	</view>

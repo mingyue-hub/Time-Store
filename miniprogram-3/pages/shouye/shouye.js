@@ -1,53 +1,34 @@
-// pages/mytest/Mytest.js
-const app = getApp()
+// pages/shouye/shouye.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    trueName: "愣子",
-    school: "华南师范大学",
-
-    user: null,
     items: [{
-      'image': "../resouce/timestore1.jpg",
-      'title': '如何看待华南师大期末考试？',
-      'context': '如何看待华南师大期末考试',
+      'image': "https://img.51miz.com/Element/00/71/25/04/6c448236_E712504_a41b4297.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fh/63",
+      'title': '一起来散步聊聊天',
+      'context': '最近疫情宅在家心情不大好，想找个同专业的同学聊聊天',
       'tag': "找伙伴",
       'type': "80%",
-      "time": "2020-10-20",
+      "time":"2020-10-20",
 
     },
     {
-      'image': "../resouce/timestore2.jpg",
-      'title': '关于陶园新菜系',
+      'image': "https://img.51miz.com/Element/00/71/25/04/6c448236_E712504_a41b4297.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fh/630",
+      'title': '一起锻炼嘛？',
       'context': '想找一个一起锻炼的小姐姐（本人女）跑步瑜伽都可',
       'tag': "锻炼",
       'type': "50%",
       "time": "2020-10-20",
-    },
-    ]
+    }
+    
 
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '个人中心',
-    })
-    // if (app.globalData.token==null){
-    //   wx.showToast({
-    //     title: '尚未登录',
-    //     icon: 'none',
-    //     duration: 8000
-    //   })
-    //   wx.navigateTo({
-    //     url: '../userLogin/userLogin',
-    //   })
-    // }
+
   },
 
   /**
@@ -98,14 +79,14 @@ Page({
   onShareAppMessage: function () {
 
   },
-  tofeedback: function () {
+  toplay1:function(){
     wx.navigateTo({
-      url: '../Feedback/Feedback',
+      url: '../playground1/playground1',
     })
   },
-  tomine: function () {
+  toplay2: function () {
     wx.navigateTo({
-      url: '../Myinfo/Myinfo',
+      url: '../playground2/playground2',
     })
   }
 })

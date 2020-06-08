@@ -9,50 +9,97 @@ Page({
     winHeight: 0,
     currentTab: 0,
     currentSelect: 1,
-    items: [{
+    items:  [{
       'image': "../resouce/timestore1.jpg",
-      'title': '互联网+寻找队友',
-      'context': '诚意寻找互联网+创新创业比赛队友',
-      'tag': "找队友",
+      'title': '一起来散步聊聊天',
+      'context': '最近疫情宅在家心情不大好，想找个同专业的同学聊聊天',
+      'tag': "找伙伴",
       'type': "80%",
-      "bit": 30
+      "time": "2020-10-20",
 
     },
-    {
-      'image': "../resouce/timestore2.jpg",
-      'title': '来一个学霸',
-      'context': '有计机的朋友嘛？帮忙解一道算法题！加急',
-      'tag': '约学习',
-      'type': "99%",
-      "bit": 10
-    },
-    {
-      'image': "../resouce/timestore3.jpg",
-      'title': '帮忙取个快递',
-      'context': '能来个热心的朋友帮我取快递到东十九楼下放到大爷那吗？',
-      'tag': '取快递',
-      'type': "90%",
-      "bit": 30
-    }
+      {
+        'image': "../resouce/timestore2.jpg",
+        'title': '一起锻炼嘛？',
+        'context': '想找一个一起锻炼的小姐姐（本人女）跑步瑜伽都可',
+        'tag': "锻炼",
+        'type': "50%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      }
       ,
-    {
-      'image': "../resouce/timestore3.jpg",
-      'title': '帮忙打个饭',
-      'context': '回东十九的朋友帮忙从陶园打个饭送到东十九3xx吗？',
-      'tag': '取快递',
-      'type': "99%",
-      "bit": 30
-    }
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起云看电影嘛？',
+        'context': '疫情在家好无聊，想找热爱漫威的朋友一起回顾漫威电影',
+        'tag': '取快递',
+        'type': "99%",
+        "time": "2020-10-20",
+      }
       ,
-    {
-      'image': "../resouce/timestore2.jpg",
-      'title': '图书馆约吗？',
-      'context': '想找一个能监督我一起学习的小姐姐（本人女）',
-      'tag': '约学习',
-      'type': "50%",
-      "bit": 30
-    }
-
+      {
+        'image': "../resouce/timestore2.jpg",
+        'title': '图书馆约吗？',
+        'context': '想找一个能监督我一起学习的小姐姐（本人女）',
+        'tag': '约学习',
+        'type': "50%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      },
+      {
+        'image': "../resouce/timestore3.jpg",
+        'title': '一起图书馆学习？',
+        'context': '去图书馆学习总是情不自禁看手机，有一样烦恼的小伙伴嘛？我们互相监督？',
+        'tag': '学习',
+        'type': "99%",
+        "time": "2020-10-20",
+      }
     ]
   },
   onLoad: function () {

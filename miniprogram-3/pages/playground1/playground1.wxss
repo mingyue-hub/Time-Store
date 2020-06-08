@@ -3,6 +3,8 @@
   border-bottom: 4rpx solid  #DDDDDD;  
   text-align: center;  
   line-height: 80rpx;
+  border-top: 1rpx solid  #DDDDDD; 
+  flex: 0 0 100rpx;
 }  
 .swiper-tab-list{  font-size: 30rpx;  
     display: inline-block;  
@@ -76,12 +78,50 @@
 .text-context{
   font-size: 12px;
 }
-.numView{
-  margin-top:15rpx;
-  margin-left: 10rpx;
+
+.list1{
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #dbdbdb; 
+  display: flex;
+  flex-direction: row;
 }
-.number{
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(161, 155, 155);
+.left1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.right{
+  width: 40%;
+  margin-left: 50rpx;
+}
+.itemtitle{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  justify-content: space-between;
+}
+.time{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(179, 176, 176);
+}
+.img1{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width:160rpx;
+  height:120rpx;
+}
+.main{
+  flex: 1;
+  position: relative;
+}
+
+.main-scroll{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
