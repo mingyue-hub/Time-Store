@@ -1,0 +1,7 @@
+
+<view class="contain">
+<!-- <text class="context">请选择发布类型</text> -->
+<button style="width:60vw " class="loginBtn" bindtap="time_time">时间换时间</button>
+<button style="width:60vw " class="loginBtn1" bindtap="time_money">时间换金钱</button>
+</view>
+

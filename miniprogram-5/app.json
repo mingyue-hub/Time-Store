@@ -1,0 +1,56 @@
+{
+  "pages": [
+    
+    "pages/Mypage/Mytest",
+    "pages/playground1/playground1",
+    "pages/Mytest/Mytest",
+    "pages/shouye/shouye",
+    "pages/publicer/publicer",
+    "pages/editor/editor",
+    "pages/playground2/playground2",
+    "pages/userLogin/userLogin",
+    "pages/Feedback/Feedback",
+    "pages/Myinfo/Myinfo",
+    "pages/forget/forget",
+    "pages/userRegist/userRegist",
+    "pages/chat/chat",
+    "pages/test/test",
+    "pages/minePage/mine",
+    "pages/playground1/playground1-1/playground1-1",
+    "pages/opp-person/opp-person",
+    "pages/playground1/plg-chat/plg-chat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffff",
+    "navigationBarTitleText": "时间典当铺",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FF6600",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "iconPath": "pages/resouce/play2.png",
+        "selectedIconPath": "pages/resouce/play2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/publicer/publicer",
+        "iconPath": "pages/resouce/play1.png",
+        "selectedIconPath": "pages/resouce/play1.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/Mypage/Mytest",
+        "iconPath": "pages/resouce/mypage.png",
+        "selectedIconPath": "pages/resouce/mypage.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

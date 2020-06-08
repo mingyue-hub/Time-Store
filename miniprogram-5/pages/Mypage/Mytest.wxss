@@ -1,0 +1,231 @@
+page{
+  background-color: rgb(245, 242, 242);
+}
+.top{
+  width: 120%;
+  height: 300rpx;
+}
+.top_back {
+  display: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 300rpx;
+}
+.top_back::after{
+  content: '';
+  width: 120%;
+  height: 300rpx;
+  position: absolute;
+  z-index: -1;
+  left: -10%;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient(160deg,rgb(240, 122, 12), rgb(240, 122, 12));
+}
+.top_center{
+  width: 75%;
+  background-color: white;
+  height: 280rpx;
+  margin-top: 120rpx;
+  margin-left: 38rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.center_up{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  
+}
+.center_down{
+width: 100%;
+height: 50%;
+display: flex;
+flex-direction: row;
+}
+.center_down_list{
+  width: 21%;
+  height: 100%;
+  display:flex;
+  margin-top: 20rpx;
+  flex-direction: column;
+}
+.line{
+  margin-top: 30rpx;
+  width: 4%;
+  height: 40rpx;
+  border-right: solid 1px #ccc;
+  vertical-align: middle;
+  display: inline-block ;
+}
+.text_up{
+  font-family: SimHei;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.text_down{
+  margin-top: 10rpx;
+  font-family: SimHei;
+  font-size: 21rpx;
+  margin-left: 47rpx;
+  text-align: center;
+}
+.center_img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 40rpx;
+}
+
+.center_img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.center_img .user_head {
+  width: 100%;
+  height: 100%;
+}
+.center_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+
+.center_name {
+  font-size: 40rpx;
+}
+
+.center_school {
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  color: #BEBEBE;
+}
+.center-right{
+  font-size: 30rpx;
+  margin-left: 120rpx;
+  margin-top: 50rpx;
+  float: right;
+  color: rgb(163, 162, 162);
+}
+.context{
+  width: 90%;
+  background-color: white;
+  height: 360rpx;
+  margin-top: 30rpx;
+  margin-left: 38rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.context_up{
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 45%;
+}
+.context_list{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.imgview{
+  width: 66rpx;
+  height: 66rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.imgtext{
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  font-family: SimHei;
+}
+
+.box1{
+  margin-top: 50rpx;
+  width: 90%;
+  height: 50vh;
+  margin-left: 38rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dbdbdb; 
+}
+
+.title{
+  height: 15%;
+  border-bottom: 1px solid #dbdbdb; 
+}
+.titletext{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 35rpx;
+  font-weight: bold;
+  font-family:  Microsoft Yahei ;
+  margin-top: 15rpx;
+}
+.list1{
+  width: 100%;
+  height: 38%;
+  border-bottom: 1px solid #dbdbdb; 
+  display: flex;
+  flex-direction: row;
+}
+.left1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.right{
+  width: 40%;
+  margin-left: 50rpx;
+}
+.itemtitle{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.time{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: rgb(179, 176, 176);
+}
+.img1{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width:160rpx;
+  height:120rpx;
+  
+}
+.more{
+  height: 15%;
+ 
+  text-align: center;
+}
+.moretext{
+  text-align: center;
+  margin: 0 auto; 
+  font-family:  Microsoft Yahei ;
+  margin-top: 18rpx;
+  color: rgb(150, 148, 148);
+}
+
+

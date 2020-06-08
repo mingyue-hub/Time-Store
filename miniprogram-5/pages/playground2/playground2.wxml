@@ -1,0 +1,23 @@
+<view class="swiper-tab" >  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">分类</view>  
+</view>  
+ 
+<swiper current="{{currentTab}}"  duration="300"  style="height:90vh" bindchange="bindChange"> 
+
+  <swiper-item>  
+  
+        <scroll-view class='main-scroll' scroll-y style="height: 100%">
+            <view class='main-list'>
+            <view class='card' bindtap="toinformation" wx:for="{{items}}">
+              <view class='card-box'><image class="img1" src="{{item.image}}"></image></view>
+              <view class="itemtitle">{{item.title}}</view>
+              <view class='time'>{{item.time}}</view>
+            </view>
+          </view>
+      </scroll-view> 
+    
+  </swiper-item>  
+ 
+</swiper> 

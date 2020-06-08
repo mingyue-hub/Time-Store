@@ -1,0 +1,88 @@
+<view class="top">
+  <view class="top_center">
+    <view class="center_up">
+      <view class="center_img">
+        <open-data type="userAvatarUrl" class="user_head"></open-data>
+      </view>
+      <view class="center_info" bingtap="toBaseInfo">
+						<view class="center_name">{{trueName}}</view>
+						<!-- <view class="center_phone">phone:{{phone}}</view> -->
+						<view class="center_school">{{school}}</view>
+			</view>
+      <view class="center-right" bindtap="tomine"><text>个人主页 ></text></view>
+    </view>
+    <view class="center_down">
+      <view class="center_down_list">
+        <view class="text_up">100</view>
+        <view class="text_down">信誉积分</view>
+      </view>
+      <view class="line"></view>
+      <view class="center_down_list">
+        <view class="text_up">10</view>
+        <view class="text_down">我的资产</view>
+      </view>
+      <view class="line"></view>
+      <view class="center_down_list">
+        <view class="text_up">1</view>
+        <view class="text_down">我的文章</view>
+      </view>
+      <view class="line"></view>
+      <view class="center_down_list">
+        <view class="text_up">100</view>
+        <view class="text_down">最近浏览</view>
+      </view>
+    </view>
+  </view>
+  <view class="top_back"></view>
+</view>
+<view class="context">
+  <view class="context_up">
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/message.png"></image></view>
+      <view class="imgtext">最新消息</view>
+    </view>
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/ing.png"></image></view>
+      <view class="imgtext">正在进行</view>
+    </view>
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/finish.png"></image></view>
+      <view class="imgtext">完成记录</view>
+    </view>
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/hisrecord.png"></image></view>
+      <view class="imgtext">发布记录</view>
+    </view>
+  </view>
+  <view class="context_up">
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/money.png"></image></view>
+      <view class="imgtext">钱包</view>
+    </view>
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/laba.png"></image></view>
+      <view class="imgtext">公告</view>
+    </view>
+    <view class="context_list" bindtap="tofeedback">
+      <view class="imgview"><image class="img" src="../resouce/restay.png"></image></view>
+      <view class="imgtext">反馈与帮助</view>
+    </view>
+    <view class="context_list">
+      <view class="imgview"><image class="img" src="../resouce/zhinan.png"></image></view>
+      <view class="imgtext">使用指南</view>
+    </view>
+  </view>
+</view>
+   <view class="box1">
+    <view class="title"><view class="titletext">今日校园</view></view>
+    <view class="list1"  wx:for-items="{{items}}">
+      <view class="left1">
+        <view class="itemtitle">{{item.title}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+      <view class="right"><image class="img1" src="{{item.image}}"></image></view>
+    </view>
+    <view class="more" bindtap="toplay1"><view class="moretext">查看更多</view></view>
+   </view>
+    
+

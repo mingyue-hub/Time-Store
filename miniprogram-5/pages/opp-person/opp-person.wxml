@@ -1,0 +1,30 @@
+<image class="image" src="../resouce/timestore3.jpg" mode="aspectFill"/>
+<view class="container">
+  <view class="box">
+    <view class="box-top">
+      <image class="image-person" src="../resouce/timestore1.jpg" role="img"/>
+      <view class="detail">
+        <view class="information">
+          <text class="font-tab"> 昵称:</text><text class="font-content"> {{information.name}}</text>
+        </view>
+        <view class="information">
+          <text class="font-tab"> 性别:</text><text class="font-content"> {{information.sex}}</text>
+        </view>
+        <view class="information">
+          <text class="font-tab"> 院校:</text><text class="font-content"> {{information.college}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="box-bottom">
+      <view class="bottom-left">
+        <image class="box-img" src="../resouce/mystyle.png" role="img"></image>
+        <text class="boxtext-left">个人信誉</text>
+        <text class="credit">{{information.credit}}</text>
+      </view>
+      <view class="bottom-right" bindtap="tosum_task">
+        <image class="box-img" src="../resouce/allook.png" role="img"></image>
+        <text class="boxtext-right">历史任务</text>
+      </view>
+    </view>
+  </view>
+</view>

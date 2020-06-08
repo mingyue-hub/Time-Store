@@ -1,0 +1,34 @@
+<view class="main">
+
+  <view class="login-icon">
+    <image class="login-img" src="../resouce/timetrading.png"></image>
+  </view>
+  <view class="login-form">
+    <form bindsubmit="doLogin">
+      <view class="inputView1">
+        <image class="nameImage" src="../resouce/login.png"></image>
+        <label class="loginLable">账号</label>
+        <input name="username" class="inputText" placeholder="学号/邮箱"/>
+      </view>
+
+      <view class="inputView2">
+        <image class="keyImage" src="../resouce/password.png"></image>
+        <label class="loginLable">密码</label>
+        <input name="password" class="inputText" password="true" placeholder="请输入密码"/>
+      </view>
+      <view class="displayright">
+      <text bindtap="toforget" style="color:rgb(247, 153, 30)">忘记密码？</text>
+      </view>
+      <view>
+        <button style="width:80vw " class="loginBtn" form-type='submit'>登录</button>
+      </view>
+      <view>
+        <button style="width:80vw" class="goRegistBtn" bindtap="goRegistBtn">注册</button>
+      </view>
+    </form>
+  </view>
+  <!--按钮-->
+  
+
+
+</view>
